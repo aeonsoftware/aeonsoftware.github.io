@@ -3,8 +3,8 @@ layout: post
 title: Launching Your 1st ICO on Stellar
 ---
 
-## 1. INTRODUCTION
-   1. This guide assumes that you have some basic blockchain knowledge and it’s only purpose is to help one create their ICO
+# Introduction:
+This guide assumes that you have some basic blockchain knowledge and it’s only purpose is to help one create their ICO
    
    2. An Initial Coin Offering, also commonly referred to as an ICO, is a fundraising mechanism in which new projects sell their underlying crypto tokens in exchange for bitcoin and ether. It's somewhat similar to an Initial Public Offering (IPO) in which investors purchase shares of a company.
 
@@ -18,7 +18,7 @@ title: Launching Your 1st ICO on Stellar
 - Code used can be found at the following github repo [https://github.com/aeonsoftware/xdrDecoder](https://github.com/aeonsoftware/xdrDecoder)
 
 
-## 2. BUILDING THE ICO
+## 2. Building the ICO
 The goal of this guide is to develop the ICO using only http requests(2) to the stellar network.But as has been realised, there are complex processes that have to take place even before the actual GET or POST request is made.  Thus various libraries are utilized to formulate the requests as will be showed in the guide below.
 
 * STEP 1 : Go to the stellar account viewer and click generate to create a pair of stellar account keys(2 sets).This can be done programmatically but is easier generated on the site. Save the keys you generate on a text file and keep the secret keys safe as they’re the lock to your stellar account on the network.Don't share the private key. If you need to send funds to your account, share the public key. That is where your funds will be sent to.

@@ -1,50 +1,16 @@
 ---
 layout: post
-title: Documentation
+title: Setting up the Stellar Core
 ---
 
-# Features:
-Hagura is a theme made for blogs with long text paragraphs. Made to be easy on eyes as well. 
+## Stellar Quickstart Docker Image
+This project provides a simple way to incorporate stellar-core and horizon into your private infrastructure, provided that you use docker.
 
-Suitable fonts are selected for better readability. Since the theme is created for smartphone reading, the theme is very light so that it loads instantly on a slow data connection.
+This image provide a default, non-validating, ephemeral configuration that should work for most developers. By configuring a container using this image with a host-based volume (described below in the "Usage" section) an operator gains access to full configuration customization and persistence of data.
 
-The theme comes with pre-installed **analytics**, **disqus** and **html compressor**. But make sure you change key parameters in the **_config.yml** file.
+The image uses the following software:
 
-* Do not remove this line (it will not be displayed) 
-{:toc}
-
-## Switch Night-Mode
-The best part is the night-mode that comes with this theme. Once you click on night-mode, the website remebers it untill you close or toggle!
-
-
-## Installation
-* Fork the repository
-* Go to settings and set Github Pages source as master.
-* Your new site should be ready at https://username.github.io/hagura/
-
-
-Default theme will look like this
-
-![webjeda hagura jekyll theme](http://webjeda.com/hagura/images/hagura-1.png)
-
-Switch to Dark Theme
-
-![webjeda hagura dark jekyll theme](http://webjeda.com/hagura/images/hagura-dark-jekyll-theme.png)
-
-This theme is responsive.
-
-![webjeda hagura responsive jekyll theme](http://webjeda.com/hagura/images/hagura-responsive.png)
-
-
-## Development
-Make changes to the **master** branch and create a pull request. Do not use **gh-pages** branch as it is used to host the theme.
-
-
-## License
-MIT License 
-
-
-### Version 1.0
-* Description along with the title in the index page.
-* Removed ugly theme switch icon and added text link.
-
+Postgresql 9.5 is used for storing both stellar-core and horizon data
+stellar-core
+horizon
+Supervisord is used from managing the processes of the services above.
