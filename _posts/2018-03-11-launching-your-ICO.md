@@ -22,6 +22,7 @@ This guide assumes that you have some basic blockchain knowledge and it’s only
 The goal of this guide is to develop the ICO using only http requests(2) to the stellar network.But as has been realised, there are complex processes that have to take place even before the actual GET or POST request is made.  Thus various libraries are utilized to formulate the requests as will be showed in the guide below.
 
 * STEP 1 : Go to the stellar account viewer and click generate to create a pair of stellar account keys(2 sets).This can be done programmatically but is easier generated on the site. Save the keys you generate on a text file and keep the secret keys safe as they’re the lock to your stellar account on the network.Don't share the private key. If you need to send funds to your account, share the public key. That is where your funds will be sent to.
+In order to distribute a custom asset or token on the Stellar Network, three unique accounts will be used. First, is the source account. The source account is the account of the entity looking to create a new token. Second is the issuing account. The issuing account is created by the source account as a mechanism to create new tokens. The third account is the distribution account. The goal of distribution account is to act as the mechanism for distributing tokens to the public.
 * One of the generated accounts will be your Issuing account while the other will be your Distributing account.
 * My accounts are the following:
 
