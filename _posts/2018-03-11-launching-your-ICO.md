@@ -111,19 +111,18 @@ In order to distribute a custom asset or token on the Stellar Network, three uni
             AAAAAE+uxxcBBqfmiGC7VIVNxGlF46HSz9bU3objl51dU8ocAAAINABsGWQAAI34AAAAAAAAAAAAAAAVAAAAAAAAAAMAAAABTFRDAAAAAAA/8PjK6rZT6wnyO1T+ry5U8MKX0hAtMTgBIwmZKOVc9QAAAAFCVEMAAAAAAD/w+MrqtlPrCfI7VP6vLlTwwpfSEC0xOAEjCZko5Vz1AAAAAJ9M9XwAAY1bAExLQAAAAAAAAWNsAAAAAAAAAAMAAAABTFRDAAAAAAA/8PjK6rZT6wnyO1T+ry5U8MKX0hAtMTgBIwmZKOVc9QAAAAFCVEMAAAAAAD/w+MrqtlPrCfI7VP6vLlTwwpfSEC0xOAEjCZko5Vz1AAAAABqM05QAMTgBIwmZKOVc9QAAAAFCVEMAAAAAAD/w+MrqtlPrCfI7VP6v …………………………………………………………………………..
         ```
         
- Go back to the Stellar Laboratory and build the following query:
-
-Source account: public key of your issuing account
-Transaction sequence number: press the blue button
-Base fee: emtpy
-Memo: None
-Time bounds: empty
-Operation type: Payment
-Destination: public key of your distribution account
-Asset: Name of your token, public key of your issuing account
-Amount: the amount you specified above. In our case, 1e6
-Source Account: empty
-Again, sign (with the private key of your issuing account) and submit your transaction.
+ - Go back to the Stellar Laboratory and build the following query:
+    - Source account: public key of your issuing account
+    - Transaction sequence number: press the blue button
+    - Base fee: emtpy
+    - Memo: None
+    - Time bounds: empty
+    - Operation type: Payment
+    - Destination: public key of your distribution account
+    - Asset: Name of your token, public key of your issuing account
+    - Amount: the amount you specified above. In our case, 1e6
+    - Source Account: empty
+    - Again, sign (with the private key of your issuing account) and submit your transaction.
 - STEP 4 : Creating the tokens.
   - After previous step, the distribution account trusts the issuing account. Now, tokens can be created.
   - This step is not intuitive: the token creation is done by sending a payment from the issuing account to the distribution account, denominated in the new token. This is why we had to change trust to begin with — the distribution account issued a statement of trust that this “BRIAN” thing was the real deal.
