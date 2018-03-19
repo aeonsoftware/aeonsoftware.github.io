@@ -45,8 +45,8 @@ title: Launching Your 1st ICO on Stellar
 8. Sign with your distributing account's secret key.
 9. Click the Submit to post transaction endpoint button 
 ![signtrusttransaction2](https://aeonsoftware.github.io/images/signtrusttransaction2.png)
+10. You should be redirecred to the page below. Click the submit button and you should be good.
 ![signtrusttransaction3](https://aeonsoftware.github.io/images/signtrusttransaction3.png)
-10. You should be redirecred to the page below. Click the post button and you should be good.
 11. If it succeeds, the json response should be in a normal grey color. Otherwise, if the whole step 2 doesn't succeed, the json response at the bottom will have a red outline.
 
 ## 3. CREATING THE TOKENS
