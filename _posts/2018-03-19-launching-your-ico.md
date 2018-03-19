@@ -140,9 +140,7 @@ title: Launching Your 1st ICO on Stellar
  - For a more detailed article into how you can implement the steps below without the form and using POST and GET requests, head over to my other article where I've tried to explain each step in detail
 
 #### 8. FAQs
-1. Why does stellar require two seperate accounts 
-2. How to check the trust line 
-3. Why do I need to be connected to the internet
-4. You can limit the trust line 
-5. How I bought my first lumens without getting up from my chair - 
+1. Why does stellar require two seperate accounts ?
+ - The issuing and distributing accounts are required to help one balance their books better. We dont have to use 2 accounts and can use just on, but the problem is that we won't be able to balance out books very well. We'll be using just one account to mint new tokens, tokens from other people will be coming into this account,and we'll still be using the same account to distribute the tokens. To keep things more organised, the issuing account will only transfer newly minted tokens to the distributing account and then the distributing account can transact with other accounts, eg. the investor account we created so as to test whether a random account/user on the stellar account can buy our BRCO tokens.
+5. How I bought my first lumens - A detailed guide on how this can be done can be found here  (https://aeonsoftware.github.io/2018/03/19/buying-your-first-lumens.html)
 
