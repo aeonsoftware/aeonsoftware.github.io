@@ -11,9 +11,10 @@ title: Launching Your 1st ICO on Stellar
 
 ## 1. CREATING THE ACCOUNTS
 
-1. Go to the stellar dashboard and generate two accounts(https://www.stellar.org/laboratory/#account-creator?network=test) 
+1. Go to the stellar dashboard and generate three accounts(https://www.stellar.org/laboratory/#account-creator?network=test) 
  - The first keys generated will be for your issuing account. 
  - The second keys generated will be for your distributing account.
+  - The thrird keys generated will be for your investor's account.
  - For each account you generate, note down both the public and private keys on a note editor as you will need them.
  - Also make sure you fund both accounts using the tool below the generate keypair button by clicking on the "get test network lumens" button. An account must have funds on the stellar network for it to be active.
 
