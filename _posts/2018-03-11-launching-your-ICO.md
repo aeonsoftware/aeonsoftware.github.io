@@ -36,10 +36,11 @@ In order to distribute a custom asset or token on the Stellar Network, three uni
       - GAB4UTCY7AS2BUOOTUUHH5CUEQHPUVHO7UN23GFKIP5CX2ASS7LPQXTW
     - Secret Key:
       - SC6PUGSLTRVEALABHV3SYJBD5J6RM5II6I6R33Z3MKNGSR6K25FKKLIJ
+
 # STEP 2 :
 * For a stellar account either on the testnet(test network) or the pubnet(public network) to be activated, it needs to be funded. The official stellar documentation for starting your own ICO suggests 31 lumens. So go ahead and fund each of the two accounts you generated with 31 XLM.Since we’re launching our ICO on the test network, use the stellar testnet faucet tool to fund both your accounts with lumens. (The process for launching your ICO on the public network is exactly the same.All you’ll have to do is to substitute test for public during the process on sections I instruct you to do so.)
+
 # STEP 3 :  
-## There are two ways to approach this step. The easier,less complicated one and the one I'd suggest would be to use the Transaction builder forms on the stellar website.  
 * For us to issue a token on stellar, we need to issue a change trust transaction between the distribution account and the issuance account. This is done through a POST transaction to the stellar network. [https://www.stellar.org/developers/horizon/reference/endpoints/transactions-create.html](https://www.stellar.org/developers/horizon/reference/endpoints/transactions-create.html)
   - Request : POST https://horizon-testnet.stellar.org/transactions
   - Arguments
@@ -112,18 +113,6 @@ In order to distribute a custom asset or token on the Stellar Network, three uni
             AAAAAE+uxxcBBqfmiGC7VIVNxGlF46HSz9bU3objl51dU8ocAAAINABsGWQAAI34AAAAAAAAAAAAAAAVAAAAAAAAAAMAAAABTFRDAAAAAAA/8PjK6rZT6wnyO1T+ry5U8MKX0hAtMTgBIwmZKOVc9QAAAAFCVEMAAAAAAD/w+MrqtlPrCfI7VP6vLlTwwpfSEC0xOAEjCZko5Vz1AAAAAJ9M9XwAAY1bAExLQAAAAAAAAWNsAAAAAAAAAAMAAAABTFRDAAAAAAA/8PjK6rZT6wnyO1T+ry5U8MKX0hAtMTgBIwmZKOVc9QAAAAFCVEMAAAAAAD/w+MrqtlPrCfI7VP6vLlTwwpfSEC0xOAEjCZko5Vz1AAAAABqM05QAMTgBIwmZKOVc9QAAAAFCVEMAAAAAAD/w+MrqtlPrCfI7VP6v …………………………………………………………………………..
         ```
         
- - Go back to the Stellar Laboratory and build the following query:
-    - Source account: public key of your issuing account
-    - Transaction sequence number: press the blue button
-    - Base fee: emtpy
-    - Memo: None
-    - Time bounds: empty
-    - Operation type: Payment
-    - Destination: public key of your distribution account
-    - Asset: Name of your token, public key of your issuing account
-    - Amount: the amount you specified above. In our case, 1e6
-    - Source Account: empty
-    - Again, sign (with the private key of your issuing account) and submit your transaction.
 - STEP 4 : Creating the tokens.
   - After previous step, the distribution account trusts the issuing account. Now, tokens can be created.
   - This step is not intuitive: the token creation is done by sending a payment from the issuing account to the distribution account, denominated in the new token. This is why we had to change trust to begin with — the distribution account issued a statement of trust that this “BRIAN” thing was the real deal.
