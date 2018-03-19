@@ -4,7 +4,7 @@ title: Launching Your 1st ICO on Stellar
 ---
 
 # Introduction:
- - The steps below will be for a test account on the test network. However, if you'd like to do this on the public network, the steps are exactly the same. The only difference is that when using stellar.org's transaction, you'll change from test to public on the top right corner of the page. Also, details on how to buy stellar lumens and fund your accounts on the public network can be found through this link()
+ - The steps below will be for a test account on the test network. However, if you'd like to do this on the public network, the steps are exactly the same. The only difference is that when using stellar.org's transaction, you'll change from test to public on the top right corner of the page. Also, details on how to buy stellar lumens and fund your accounts on the public network can be found through this link(https://aeonsoftware.github.io/2018/03/19/buying-your-first-lumens.html)
  - An Initial Coin Offering, also commonly referred to as an ICO, is a fundraising mechanism in which new projects sell their underlying crypto tokens in exchange for bitcoin and ether. It’s somewhat similar to an Initial Public Offering (IPO) in which investors purchase shares of a company.
  - Most ICO’s are usually launched on Etherium but of late a number of companies have started launching their ICO’s on the stellar network.
  - This guide will take you through a detailed step by step process on how to create your first ICO on stellar.
