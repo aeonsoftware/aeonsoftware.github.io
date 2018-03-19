@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Launching Your 1st ICO on Stellar
+title: Launching Your 1st ICO on Stellar(using POST and GET requests) - Detailed
 ---
 
 # Introduction:
