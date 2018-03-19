@@ -63,7 +63,7 @@ title: Launching Your 1st ICO on Stellar
 9. Sign with your issuing account's secret key.
 10. Click the Submit to post transaction endpoint button
 ![step2.3](https://aeonsoftware.github.io/images/step2.3.png)
-11. You should be redirecred to the page below. Click the post button and you should be good.
+11. You should be redirecred to the page below. Click the submit button and you should be good.
 ![step2.4](https://aeonsoftware.github.io/images/step2.4.png)
 12. If it succeeds, the json response should be in a normal grey color. Otherwise, if the whole step 2 doesn't succeed, the json response at the bottom will have a red outline.
 13. To test whether the process succeeded, explore your Distributor account here and you should see the payment we just made (https://www.stellar.org/laboratory/#explorer?resource=accounts&endpoint=single&network=test). Submit your distribution Public Key as the account id.
@@ -77,7 +77,7 @@ title: Launching Your 1st ICO on Stellar
  (https://www.stellar.org/blog/tokens-on-stellar/)(https://goolge.io/post/launching_stellar_ico/)
 
 ## 6. DISTRIBUTING YOUR TOKEN
- - The final step is to get the token into the people's hands
+ - The next step is to get the token into the people's hands
 1. Head over to the stellar labs transaction builder. We'll use this to fill out a form that'll distribute from our distributing account to the anyone in the general public.(https://www.stellar.org/laboratory/#txbuilder?network=test).
 2. Use the Distributing account's public key as the source account.
 ![step3.1](https://aeonsoftware.github.io/images/step3.1.png)
@@ -95,7 +95,7 @@ title: Launching Your 1st ICO on Stellar
 12. You should be redirected as in previous steps. Click the post button and you should be good.
 13. If it succeeds, the json response should be in a normal grey color. Otherwise, if the whole step 2 doesn't succeed, the json response at the bottom will have a red outline.
 
-## 6. BUYING THE TOKEN
+## 7. BUYING THE TOKEN
  - Anyone willing to buy the token has to trust the issuer first.
 1. Add your transaction to the trustline buy  heading over to the stellar labs transaction builder.(https://www.stellar.org/laboratory/#txbuilder?network=test)
 2. Use the Investor account's public key as the source account.
